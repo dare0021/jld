@@ -8,6 +8,7 @@
 
 #include "JLDIO.h"
 
+/// Test driver class for the parser. Can be omitted.
 class JLDDriver
 {
 public:
