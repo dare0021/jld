@@ -103,6 +103,7 @@ JLDString* JLDIO::parseString(std::istringstream& iss)
 	ignoreWhiteSpace(iss);
 	char charBuffer, matchedChar;
 	iss.get(charBuffer);
+	/// replace \" with " for MSVS. MSVS bug? Confirmed for MSVS 2015 Update 1
 	assert((charBuffer == '\'' || charBuffer == '\"') && "Input is not a string");
 	matchedChar = charBuffer;
 	std::string text = "";
