@@ -25,7 +25,9 @@ std::string JLDDriver::readFile(std::string path)
 		return out;
 	}
 	else
+	{
 		assert(0 && "Unable to open file"); 
+	}
 }
 
 int main(int argc, char* argv[])
